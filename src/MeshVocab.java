@@ -11,7 +11,7 @@ public class MeshVocab {
     @Parsed(index = 2)
     private String parents;
 
-    @Parsed(index = 0)
+    @Parsed(index = 3)
     private String semanticTypes;
 
     @Override
