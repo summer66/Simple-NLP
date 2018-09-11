@@ -23,4 +23,36 @@ public class MeshVocab {
                 ", semanticTypes='" + semanticTypes + '\'' +
                 '}';
     }
+
+    public String getPreferred() {
+        return preferred;
+    }
+
+    public void setPreferred(String preferred) {
+        this.preferred = preferred;
+    }
+
+    public String getSynonyms() {
+        return synonyms;
+    }
+
+    public void setSynonyms(String synonyms) {
+        this.synonyms = synonyms;
+    }
+
+    public String getParents() {
+        return parents;
+    }
+
+    public void setParents(String parents) {
+        this.parents = parents;
+    }
+
+    public String getSemanticTypes() {
+        return semanticTypes;
+    }
+
+    public void setSemanticTypes(String semanticTypes) {
+        this.semanticTypes = semanticTypes;
+    }
 }
