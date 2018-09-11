@@ -14,6 +14,8 @@ public class MeshExtractor {
 
     private static Set<String> stopwords = new HashSet<>(Arrays.asList("is", "are", "the", "was", "were", "on", "for", "by", "it"));
 
+   private static Map<String, Set<String>> tokenToMeshKeywords = new HashMap<>();
+
     public static void main(String[] args) throws Exception {
 
         CsvParserSettings settings = new CsvParserSettings();
@@ -115,24 +117,27 @@ public class MeshExtractor {
 
         List<MeshVocab> matchedBeans = new ArrayList<>();
         for (String token : tokens) {
-            int max = 0;
-            MeshVocab matchedBean = null;
+            if(tokenToMeshKeywords.get(token) == null) {
+                int max = 0;
+                MeshVocab matchedBean = null;
 
-            for (MeshVocab bean : beans) {
+                for (MeshVocab bean : beans) {
 
-                Set<String> terms = bean.getAllTerms();
-                for (String term : terms) {
+                    Set<String> terms = bean.getAllTerms();
+                    for (String term : terms) {
 
-                    int lcs = longestCommonSubsequend(term, token, term.length(), token.length());
-                    if (lcs > max) {
-                        max = lcs;
-                        matchedBean = bean;
+                        int lcs = longestCommonSubsequend(term, token);
+                        if (lcs > max) {
+                            max = lcs;
+                            matchedBean = bean;
+                        }
                     }
                 }
-            }
 
-            if (matchedBean != null) {
-                matchedBeans.add(matchedBean);
+                if (matchedBean != null) {
+                    matchedBeans.add(matchedBean);
+                    tokenToMeshKeywords.computeIfAbsent(token, k -> new HashSet<>()).add(matchedBean.getPreferred());
+                }
             }
         }
 
@@ -144,15 +149,24 @@ public class MeshExtractor {
 
     }
 
-    private static int longestCommonSubsequend(String a, String b, int m, int n) {
-
-        if (m == 0 || n == 0)
-            return 0;
-        if (a.charAt(m - 1) == b.charAt(n - 1))
-            return 1 + longestCommonSubsequend(a, b, m - 1, n - 1);
-        else
-            return Math.max(longestCommonSubsequend(a, b, m, n - 1), longestCommonSubsequend(a, b, m - 1, n));
-
+    public static int longestCommonSubsequend(String seq1, String seq2) {
+        int m = seq1.length();
+        int n = seq2.length();
+        int[][] matrix = new int[m + 1][n + 1];
+        for (int i = 0; i <= m; i++) {
+            for (int j = 0; j <= n; j++) {
+                if (i == 0 || j == 0) {
+                    matrix[i][j] = 0;
+                }
+                else if (seq1.charAt(i - 1) == seq2.charAt(j - 1)) {
+                    matrix[i][j] = matrix[i - 1][j - 1] + 1;
+                }
+                else {
+                    matrix[i][j] = Integer.max(matrix[i - 1][j], matrix[i][j - 1]);
+                }
+            }
+        }
+        return matrix[m][n];
     }
 
     private static void removeStopWords(Set<String> tokens) {
