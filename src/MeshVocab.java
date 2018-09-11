@@ -1,5 +1,8 @@
 import com.univocity.parsers.annotations.Parsed;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class MeshVocab {
 
     @Parsed(index = 0)
@@ -13,6 +16,8 @@ public class MeshVocab {
 
     @Parsed(index = 3)
     private String semanticTypes;
+
+    private Set<String> allTerms;
 
     @Override
     public String toString() {
@@ -33,6 +38,9 @@ public class MeshVocab {
     }
 
     public String getSynonyms() {
+        if(synonyms == null) {
+            synonyms = "";
+        }
         return synonyms;
     }
 
@@ -41,6 +49,9 @@ public class MeshVocab {
     }
 
     public String getParents() {
+        if(parents == null) {
+            parents = "";
+        }
         return parents;
     }
 
@@ -54,5 +65,16 @@ public class MeshVocab {
 
     public void setSemanticTypes(String semanticTypes) {
         this.semanticTypes = semanticTypes;
+    }
+
+    public Set<String> getAllTerms() {
+        if(allTerms == null) {
+            allTerms = new HashSet<>();
+        }
+        return allTerms;
+    }
+
+    public void setAllTerms(Set<String> allTerms) {
+        this.allTerms = allTerms;
     }
 }
