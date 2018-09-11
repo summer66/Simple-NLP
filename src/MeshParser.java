@@ -10,8 +10,10 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public class MeshParser {
+
 
     public static void main(String[] args) throws Exception {
 
@@ -34,7 +36,7 @@ public class MeshParser {
 
             for(MeshVocab bean : beans) {
                 String typeStr = bean.getSemanticTypes();
-                List<String> types = Arrays.asList(typeStr.split(";"));
+                List<String> types = Arrays.asList(typeStr.split(";")).stream().map(String::toLowerCase).collect(Collectors.toList());
 
                 semanticTypes.addAll(types);
             }
