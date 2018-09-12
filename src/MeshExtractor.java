@@ -7,8 +7,14 @@ import com.univocity.parsers.csv.CsvWriterSettings;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
-import java.io.InputStreamReader;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class MeshExtractor {
 
@@ -59,7 +65,7 @@ public class MeshExtractor {
 
 		CsvWriter csvWriter = new CsvWriter(new FileWriter("/home/hao/Documents/Simple-NLP/resources/keywords_extracted.csv"), new CsvWriterSettings());
 
-		csvWriter.writeHeaders("filename","Is Female","Names", "Nouns", "Organizations", "Verbs", "Text", "keywords");
+		csvWriter.writeHeaders("filename", "Is Female", "Names", "Nouns", "Organizations", "Verbs", "keywords", "Text");
 
 		int count = 0;
 
@@ -73,8 +79,10 @@ public class MeshExtractor {
 			if (!extractedKeywords.isEmpty()) {
 				count++;
 				System.out.println(genderBean.getSentence() + ": " + extractedKeywords);
-				csvWriter.writeRow(genderBean.getFilnName(), genderBean.getFemale(), genderBean.getNames(), genderBean.getNouns(), genderBean.getOrgs(), genderBean.getVerbs(), genderBean.getSentence(), String.join(";", extractedKeywords));
 			}
+
+			csvWriter.writeRow(genderBean.getFilnName(), genderBean.getFemale(), genderBean.getNames(), genderBean.getNouns(), genderBean.getOrgs(),
+					genderBean.getVerbs(), String.join(";", extractedKeywords), genderBean.getSentence());
 		}
 
 		csvWriter.close();
