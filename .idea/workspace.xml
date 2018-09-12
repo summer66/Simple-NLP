@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52eb1e09-85d8-4e6f-8f0d-4d881870f900" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/SortKeywordsList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/candidate_keywords" beforeDir="false" afterPath="$PROJECT_DIR$/resources/candidate_keywords" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mesh_extracted.csv" beforeDir="false" afterPath="$PROJECT_DIR$/resources/mesh_extracted.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/candidate_keywords" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/keywords_extracted.csv" beforeDir="false" afterPath="$PROJECT_DIR$/resources/keywords_extracted.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenderedSentence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenderedSentence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MeshExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeshExtractor.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,60 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="selected_semantic_types" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/selected_semantic_types">
+      <file leaf-file-name="SortKeywordsList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SortKeywordsList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="16" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GenderedSentence.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GenderedSentence.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MeshParser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MeshParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="28" column="80" selection-start-line="28" selection-start-column="80" selection-end-line="28" selection-end-column="80" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MeshExtractor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MeshExtractor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="61" column="52" selection-start-line="61" selection-start-column="52" selection-end-line="61" selection-end-column="52" />
-              <folding>
-                <element signature="e#4944#4945#0" expanded="true" />
-                <element signature="e#4978#4979#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mesh_extracted.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/mesh_extracted.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="27" column="67" lean-forward="true" selection-start-line="27" selection-start-column="67" selection-end-line="27" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SelectedMesh.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SelectedMesh.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="34" column="52" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
+            <state relative-caret-position="432">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,25 +31,59 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MeshVocab.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MeshVocab.java">
+      <file leaf-file-name="GenderedSentence.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GenderedSentence.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="83" column="36" selection-start-line="83" selection-start-column="36" selection-end-line="83" selection-end-column="36" />
+            <state relative-caret-position="418">
+              <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
               <folding>
-                <element signature="e#1846#1847#0" expanded="true" />
-                <element signature="e#1900#1901#0" expanded="true" />
-                <element signature="e#1946#1947#0" expanded="true" />
+                <element signature="e#1083#1084#0" expanded="true" />
+                <element signature="e#1127#1128#0" expanded="true" />
+                <element signature="e#1163#1164#0" expanded="true" />
+                <element signature="e#1195#1196#0" expanded="true" />
+                <element signature="e#1223#1224#0" expanded="true" />
+                <element signature="e#1265#1266#0" expanded="true" />
+                <element signature="e#1299#1300#0" expanded="true" />
+                <element signature="e#1331#1332#0" expanded="true" />
+                <element signature="e#1359#1360#0" expanded="true" />
+                <element signature="e#1401#1402#0" expanded="true" />
+                <element signature="e#1435#1436#0" expanded="true" />
+                <element signature="e#1466#1467#0" expanded="true" />
+                <element signature="e#1493#1494#0" expanded="true" />
+                <element signature="e#1533#1534#0" expanded="true" />
+                <element signature="e#1565#1566#0" expanded="true" />
+                <element signature="e#1597#1598#0" expanded="true" />
+                <element signature="e#1625#1626#0" expanded="true" />
+                <element signature="e#1667#1668#0" expanded="true" />
+                <element signature="e#1701#1702#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="candidate_keywords" pinned="false" current-in-tab="true">
+      <file leaf-file-name="candidate_keywords" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/candidate_keywords">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
+            <state relative-caret-position="251">
+              <caret line="64" column="10" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MeshExtractor.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/MeshExtractor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gendered_sentences.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/gendered_sentences.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -115,6 +103,7 @@
       <find>chromot</find>
       <find>syndr</find>
       <find>chromatography</find>
+      <find>chromat</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -134,8 +123,11 @@
         <option value="$PROJECT_DIR$/src/MeshParser.java" />
         <option value="$PROJECT_DIR$/src/MeshVocab.java" />
         <option value="$PROJECT_DIR$/src/SelectedMesh.java" />
-        <option value="$PROJECT_DIR$/src/MeshExtractor.java" />
         <option value="$PROJECT_DIR$/resources/candidate_keywords" />
+        <option value="$PROJECT_DIR$/src/SortKeywordsList.java" />
+        <option value="$PROJECT_DIR$/resources/candidate_keywords_sorted" />
+        <option value="$PROJECT_DIR$/src/GenderedSentence.java" />
+        <option value="$PROJECT_DIR$/src/MeshExtractor.java" />
       </list>
     </option>
   </component>
@@ -231,6 +223,11 @@
       <module name="Simple-NLP" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
+    <configuration name="SortKeywordsList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SortKeywordsList" />
+      <module name="Simple-NLP" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -288,10 +285,12 @@
     <list>
       <item itemvalue="Application.SelectedMesh" />
       <item itemvalue="Application.MeshExtractor" />
+      <item itemvalue="Application.SortKeywordsList" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.MeshExtractor" />
+        <item itemvalue="Application.SortKeywordsList" />
         <item itemvalue="Application.SelectedMesh" />
       </list>
     </recent_temporary>
@@ -307,7 +306,7 @@
       <option name="presentableId" value="Default" />
       <updated>1536705504239</updated>
       <workItem from="1536705509843" duration="880000" />
-      <workItem from="1536706443303" duration="4939000" />
+      <workItem from="1536706443303" duration="7719000" />
     </task>
     <task id="LOCAL-00001" summary="use keyword list instead of mesh">
       <created>1536711375344</created>
@@ -323,11 +322,39 @@
       <option name="project" value="LOCAL" />
       <updated>1536711444564</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add more keywords to list">
+      <created>1536711708676</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1536711708676</updated>
+    </task>
+    <task id="LOCAL-00004" summary="change file name">
+      <created>1536711788795</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1536711788795</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add result to git">
+      <created>1536711816267</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1536711816267</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add more keywords">
+      <created>1536712285036</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1536712285036</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5819000" />
+    <option name="totallyTimeSpent" value="8599000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="950" extended-state="6" />
@@ -343,13 +370,14 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32925338" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25581396" />
       <window_info anchor="right" id="Mongo Explorer" order="3" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24958494" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24958494" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32925338" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -361,7 +389,6 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,7 +400,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="use keyword list instead of mesh" />
     <MESSAGE value="missed some files" />
-    <option name="LAST_COMMIT_MESSAGE" value="missed some files" />
+    <MESSAGE value="add more keywords to list" />
+    <MESSAGE value="change file name" />
+    <MESSAGE value="add result to git" />
+    <MESSAGE value="add more keywords" />
+    <option name="LAST_COMMIT_MESSAGE" value="add more keywords" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/resources/selected_semantic_types">
@@ -397,10 +428,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="846">
           <caret line="57" column="60" selection-start-line="57" selection-start-column="60" selection-end-line="57" selection-end-column="60" />
-          <folding>
-            <element signature="e#4944#4945#0" expanded="true" />
-            <element signature="e#4978#4979#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -440,13 +467,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GenderedSentence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/selected_semantic_types">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -471,13 +491,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/MeSH.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="7712" column="14" selection-start-line="7712" selection-end-line="7712" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/mesh_extracted.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
@@ -485,21 +498,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MeshExtractor.java">
+    <entry file="file://$PROJECT_DIR$/resources/candidate_keywords">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="61" column="52" selection-start-line="61" selection-start-column="52" selection-end-line="61" selection-end-column="52" />
-          <folding>
-            <element signature="e#4944#4945#0" expanded="true" />
-            <element signature="e#4978#4979#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-679">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/MeSH.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="7712" column="7" selection-start-line="7712" selection-end-line="7712" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/semantic_types">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-756" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/candidate_keywords">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
+        <state relative-caret-position="251">
+          <caret line="64" column="10" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SortKeywordsList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/gendered_sentences.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GenderedSentence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
+          <folding>
+            <element signature="e#1083#1084#0" expanded="true" />
+            <element signature="e#1127#1128#0" expanded="true" />
+            <element signature="e#1163#1164#0" expanded="true" />
+            <element signature="e#1195#1196#0" expanded="true" />
+            <element signature="e#1223#1224#0" expanded="true" />
+            <element signature="e#1265#1266#0" expanded="true" />
+            <element signature="e#1299#1300#0" expanded="true" />
+            <element signature="e#1331#1332#0" expanded="true" />
+            <element signature="e#1359#1360#0" expanded="true" />
+            <element signature="e#1401#1402#0" expanded="true" />
+            <element signature="e#1435#1436#0" expanded="true" />
+            <element signature="e#1466#1467#0" expanded="true" />
+            <element signature="e#1493#1494#0" expanded="true" />
+            <element signature="e#1533#1534#0" expanded="true" />
+            <element signature="e#1565#1566#0" expanded="true" />
+            <element signature="e#1597#1598#0" expanded="true" />
+            <element signature="e#1625#1626#0" expanded="true" />
+            <element signature="e#1667#1668#0" expanded="true" />
+            <element signature="e#1701#1702#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MeshExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
         </state>
       </provider>
     </entry>

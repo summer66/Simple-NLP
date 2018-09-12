@@ -59,7 +59,7 @@ public class MeshExtractor {
 
 		CsvWriter csvWriter = new CsvWriter(new FileWriter("/home/hao/Documents/Simple-NLP/resources/keywords_extracted.csv"), new CsvWriterSettings());
 
-		csvWriter.writeHeaders("filenamne", "Text", "keywords");
+		csvWriter.writeHeaders("filename","Is Female","Names", "Nouns", "Organizations", "Verbs", "Text", "keywords");
 
 		int count = 0;
 
@@ -73,7 +73,7 @@ public class MeshExtractor {
 			if (!extractedKeywords.isEmpty()) {
 				count++;
 				System.out.println(genderBean.getSentence() + ": " + extractedKeywords);
-				csvWriter.writeRow(genderBean.getFilnName(), genderBean.getSentence(), String.join(";", extractedKeywords));
+				csvWriter.writeRow(genderBean.getFilnName(), genderBean.getFemale(), genderBean.getNames(), genderBean.getNouns(), genderBean.getOrgs(), genderBean.getVerbs(), genderBean.getSentence(), String.join(";", extractedKeywords));
 			}
 		}
 
