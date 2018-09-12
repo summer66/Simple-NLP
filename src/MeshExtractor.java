@@ -5,6 +5,7 @@ import com.univocity.parsers.csv.CsvWriter;
 import com.univocity.parsers.csv.CsvWriterSettings;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.ArrayList;
@@ -14,37 +15,57 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeMap;
 import java.util.TreeSet;
 
 public class MeshExtractor {
 
 	private static Set<String> stopwords = new HashSet<>(
-			Arrays.asList("is", "are", "the", "was", "were", "on", "for", "by", "it", "we",
-					"he", "she", "as", "and", "thank", "like", "of", "", "to", "dr", "author", "kind", "university", "also", "at", "in", "wish", "thankful", "authors", "his", "her", "she", "he"));
+			Arrays.asList("is", "are", "the", "was", "were", "on", "for", "by", "it", "we", "he", "she", "as", "and", "thank", "like", "of", "", "to", "dr",
+					"author", "kind", "university", "also", "at", "in", "wish", "thankful", "authors", "his", "her", "she", "he"));
 
 	private static Map<String, Set<String>> tokenToMeshKeywords = new HashMap<>();
 
+	private static Map<String, String> typeMap = new HashMap<>();
+
+	private static Map<String, String> keywordToTypeMap = new HashMap<>();
+
+	private static Map<String, Integer> typeToCount = new TreeMap<>();
+
+	static {
+		typeMap.put("a", "material");
+		typeMap.put("b", "analysis");
+		typeMap.put("c", "procedure");
+		typeMap.put("d", "advice");
+	}
+
 	public static void main(String[] args) throws Exception {
 
-//		CsvParserSettings settings = new CsvParserSettings();
-//		BeanListProcessor<MeshVocab> rowProcessor = new BeanListProcessor<>(MeshVocab.class);
-//
-//		settings.setProcessor(rowProcessor);
-//
-//		settings.setHeaderExtractionEnabled(true);
-//
-//		CsvParser parser = new CsvParser(settings);
-//
-//		parser.parse(new FileReader("/home/hao/Documents/Simple-NLP/resources/selected_mesh.csv"));
-//
-//		List<MeshVocab> beansOfInterest = rowProcessor.getBeans();
+		//		CsvParserSettings settings = new CsvParserSettings();
+		//		BeanListProcessor<MeshVocab> rowProcessor = new BeanListProcessor<>(MeshVocab.class);
+		//
+		//		settings.setProcessor(rowProcessor);
+		//
+		//		settings.setHeaderExtractionEnabled(true);
+		//
+		//		CsvParser parser = new CsvParser(settings);
+		//
+		//		parser.parse(new FileReader("/home/hao/Documents/Simple-NLP/resources/selected_mesh.csv"));
+		//
+		//		List<MeshVocab> beansOfInterest = rowProcessor.getBeans();
 
 		Set<String> keywords = new HashSet<>();
 
-		try(BufferedReader reader = new BufferedReader(new FileReader("/home/hao/Documents/Simple-NLP/resources/candidate_keywords"))) {
+		try (BufferedReader reader = new BufferedReader(new FileReader("/home/hao/Documents/Simple-NLP/resources/candidate_keywords"))) {
 			String line = null;
-			while( (line = reader.readLine()) != null) {
-				keywords.add(line);
+			while ((line = reader.readLine()) != null) {
+				if (!line.isEmpty()) {
+					String[] content = line.split(":");
+
+					keywords.add(content[0]);
+
+					keywordToTypeMap.put(content[0], content[1]);
+				}
 			}
 		}
 
@@ -72,13 +93,16 @@ public class MeshExtractor {
 		for (GenderedSentence genderBean : beans2) {
 			String text = genderBean.getSentence();
 
-//			Set<String> meshKeyWords = getMeshKeyWords(text, beansOfInterest);
+			//			Set<String> meshKeyWords = getMeshKeyWords(text, beansOfInterest);
 
 			Set<String> extractedKeywords = getKeywords(text, keywords);
 
 			if (!extractedKeywords.isEmpty()) {
 				count++;
 				System.out.println(genderBean.getSentence() + ": " + extractedKeywords);
+				Set<String> types = new HashSet<>();
+				extractedKeywords.forEach(word -> types.add(keywordToTypeMap.get(word)));
+				types.forEach(type -> typeToCount.merge(type, 1, Integer::sum));
 			}
 
 			csvWriter.writeRow(genderBean.getFilnName(), genderBean.getFemale(), genderBean.getNames(), genderBean.getNouns(), genderBean.getOrgs(),
@@ -87,23 +111,32 @@ public class MeshExtractor {
 
 		csvWriter.close();
 
-		System.out.println("Number of sentences: " + beans2.size());
-
+		//		System.out.println("Number of sentences: " + beans2.size());
+		//
 		System.out.println(count);
 
+		try (BufferedWriter writer = new BufferedWriter(new FileWriter("tally_keywords"))) {
 
+			writer.write("Total number of sentences that contain keywords: " + count);
+			writer.newLine();
+
+			for (Map.Entry<String, Integer> entry : typeToCount.entrySet()) {
+				System.out.printf("%s%s%d%n", typeMap.get(entry.getKey()), ":", entry.getValue());
+				writer.write(String.format("%s%s%d%n", typeMap.get(entry.getKey()), ":", entry.getValue()));
+			}
+		}
 
 	}
 
 	private static Set<String> getMeshKeyWords(String text, List<MeshVocab> beans) {
-//		System.out.println("Processing: " + text);
+		//		System.out.println("Processing: " + text);
 		Set<String> keywords = new TreeSet<>();
 
 		Set<String> tokens = new HashSet<>(Arrays.asList(text.toLowerCase().split(" ")));
 
 		removeStopWords(tokens);
 
-//		System.out.println(tokens);
+		//		System.out.println(tokens);
 
 		List<MeshVocab> matchedBeans = new ArrayList<>();
 		for (String token : tokens) {
@@ -119,7 +152,7 @@ public class MeshExtractor {
 					for (String term : terms) {
 
 						int lcs = longestCommonSubsequence(term, token);
-						double ratio = (double) lcs/token.length();
+						double ratio = (double) lcs / token.length();
 						if (ratio > max && ratio > 0.2) {
 							max = ratio;
 							matchedBean = bean;
@@ -149,9 +182,9 @@ public class MeshExtractor {
 
 		Set<String> tokens = new HashSet<>(Arrays.asList(text.toLowerCase().split("\\s+")));
 
-		for(String token : tokens) {
+		for (String token : tokens) {
 			token = token.replaceAll("[.,()]", "");
-			if(keywords.contains(token)) {
+			if (keywords.contains(token)) {
 				words.add(token);
 			}
 		}
