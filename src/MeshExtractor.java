@@ -56,7 +56,7 @@ public class MeshExtractor {
 
 		Set<String> keywords = new HashSet<>();
 
-		try (BufferedReader reader = new BufferedReader(new FileReader("/home/hao/Documents/Simple-NLP/resources/candidate_keywords"))) {
+		try (BufferedReader reader = new BufferedReader(new FileReader("/home/hao/Documents/Simple-NLP/resources/candidate_keywords.txt"))) {
 			String line = null;
 			while ((line = reader.readLine()) != null) {
 				if (!line.isEmpty()) {
