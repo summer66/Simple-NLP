@@ -7,7 +7,9 @@ filenamne,Text,keywords
 3D_Print_Med/PMC6036666.nxml,"SL: Study design, Data Acquisition, Data Analysis, Drafting of manuscript, Critical revision of the manuscript.",data
 3D_Print_Med/PMC6036764.nxml,These include Dr. Bill Mohler from the University of Connecticut at Farmington for the  C. elegans  embryo dataset and Dr. Sara Crittenden at the University of Wisconsin at Madison for the dataset of the distal tip cell.,cell
 3D_Print_Med/PMC6036610.nxml,The authors would like to thank Drs Bohdan Pomahac and Amir Imanzadeh for their invaluable contribution in data collection and in preparation of the manuscript.,data
+3_Biotech/PMC3339618.nxml,"The authors would like to express their gratitude to Professor Roy H. Doi from the University of California (USA) for the kind donation of the  C. cellulovorans  plasmid constructs, and thanks to Dr Volker Fischer from Agro-yields, South Africa, for kindly providing the sugar beet.",plasmid
 3_Biotech/PMC3339622.nxml,"We thank Dr Deborah Stenzel, QUT, for assistance in electron microscopy.",microscopy
+3_Biotech/PMC3482444.nxml,"The authors would like to thank Prof. Jayesh Bellare, Department of Chemical Engineering, IIT Bombay for providing facilities for BET surface area measurement and Centre for Research in Nanotechnology and Science—Sophisticated Analytical Instrumental Centre (CRNTS-SAIF) at IIT Bombay for FTIR analysis of algal samples.",chemical
 3_Biotech/PMC3339602.nxml,"The Authors are grateful to Dr. G. S. Avadhani, Principal Research Scientist, IISc, India, for taking TEM images.",tem
 3_Biotech/PMC3433876.nxml,"We thank Prof. K. Veluthambi, MKU, Madurai, India for  Agrobacterium tumefaciens  strain and Center for
 Application of Molecular Biology to International Agriculture (CAMBIA), Australia
@@ -17,6 +19,7 @@ for pCAMBIA2301.",strain
 3_Biotech/PMC3824784.nxml,"Authors thank Helen Chan laboratory assistant and Pedro J Martinez Garcia postdoc at UC Davis, for their collaboration in lab work and data analysis.",data
 3_Biotech/PMC3646113.nxml,"Shripad N. Surwase is thankful to Dr. James S. Hyde and Dr. Christopher C. Felix, Department of Biophysics and Center for Imaging Research Medical College of Wisconsin, Milwaukee, WI, USA, for providing EPR analysis facility.",imaging
 3_Biotech/PMC3964253.nxml,"We wish to thank Dr. B. Meyer, Mr. M. Rajab for helping in DNA sequencing, M. Al-Buhairi, N. Venturina for technical assistance, and Dr. M. Shoukri for statistical advice.",dna;sequencing
+3_Biotech/PMC3964251.nxml,"The authors gratefully acknowledge School of Chemical Sciences, Mahatma Gandhi University, Kottayam, Kerala, India, for the help and support for the analysis of samples and also DBT-RGYI (Department of Biotechnology-Rapid Grant Young Investigator) Programme for the instrumentation facility.",chemical
 3_Biotech/PMC4235891.nxml,"The authors would like to thank Dr. U Basu (Department of Molecular Biology and Biotechnology, University of Kalyani) and Dr. P Roy (SINP) for providing nanodrop and TEM facilities, respectively.",tem
 3_Biotech/PMC4624133.nxml,"The Web interface for Signal Scan was kindly provided by Ms. Meena Sakharkar at Bioinformatics Centre, NUS, Singapore.",scan
 3_Biotech/PMC4434417.nxml,"We express our heartfelt thanks to Mrs. K. Prashanthi, Jain University, Bangalore, for her assistance in HPLC analysis.",hplc
@@ -30,9 +33,10 @@ for pCAMBIA2301.",strain
 3_Biotech/PMC4912962.nxml,"We thank Prof. T. Satyanarayana, Department of Microbiology, South Campus, Delhi University, Delhi, for extending facilities for enzyme purification.",enzyme
 3_Biotech/PMC4909018.nxml,"We would like to thank Dr. Ghada A. Abu El-Heba, Researcher, Department of Nucleic Acid and Protein Structure, Agricultural Genetic Engineering Research Institute (AGERI), ARC, Giza, Egypt, for helping us in gene sequencing and alignment.",protein;sequencing
 3_Biotech/PMC5005230.nxml,"We thank Dr. Wolfgang Zachariae, Max Planck Institute of Molecular Cell Biology and Genetics, Germany for providing genomic-tagged  CDC5 - TAP  yeast strains.",cell
-3_Biotech/PMC5002272.nxml,"We thank Dr. Sandeep Kale for providing HPLC facility at DBT-ICT Centre for Energy Biosciences, Institute of Chemical Technology, Mumbai, India.",hplc
+3_Biotech/PMC5002272.nxml,"We thank Dr. Sandeep Kale for providing HPLC facility at DBT-ICT Centre for Energy Biosciences, Institute of Chemical Technology, Mumbai, India.",chemical;hplc
 3_Biotech/PMC5112185.nxml,The authors wish to thank Picklu Mandal for all his assistance during sample collection.,sample
 3_Biotech/PMC5042906.nxml,"Vo Van Giau collected the samples, performed the experiments, analyzed and interpreted the data and wrote the manuscript.",data
+3_Biotech/PMC5052223.nxml,"The authors are highly grateful to Dr. A. Spena, Max-Planck-Institute fur Zuchtungsforschung, 5000 Koin 30, FRG for providing the vectors.",vectors
 3_Biotech/PMC5116299.nxml,Sequencing  M. burkeana  RNA was performed at the Biotechnology Platform of the Agricultural Research Council of South Africa.,rna;sequencing
 3_Biotech/PMC5010538.nxml,"Technical assistance for HPLC analysis provided by Dr. R.N. Ram, Professor and Head, Department of Fishery Biology, College of Fisheries is gratefully acknowledged.",hplc
 3_Biotech/PMC5388660.nxml,We are also thankful to Dr. P. N. Saxena for his help in SEM studies.,sem
@@ -53,9 +57,10 @@ IBRO_Rep/PMC6084867.nxml,"First, we would like to acknowledge and thank Matt Fer
 IBRO_Rep/PMC6084822.nxml,I am also grateful to Dr. Erika Scholl for her assistance in measuring rat serum osmolarity and to Dr. Noel Carlson for his insightful comments on the manuscript.,rat;serum
 IBRO_Rep/PMC6084913.nxml,"The experimental data have also been accumulated by Mrs. Shotaro Suzuki, Yudai Hirano, and Kota Kume.",data
 IBRO_Rep/PMC6084925.nxml,"The authors would like to thank the Flinders Biomedical Engineering Department, Mark McEwen and Noel Kitto for technical support, the Animal and Microscopy Facilities of Flinders University, Dr. Timothy Chataway, and the Alzheimer's and Parkinson diseases' lab especially Fariba Chegini for their enthusiastic discussions and support.",animal;microscopy
-IBRO_Rep/PMC6084925.nxml,We also acknowledge Ms Robyn Flook and the South Australian Brain Bank in supplying all the brain tissue used in this study.,supplying;tissue
+IBRO_Rep/PMC6084925.nxml,We also acknowledge Ms Robyn Flook and the South Australian Brain Bank in supplying all the brain tissue used in this study.,tissue
 IBRO_Rep/PMC6084826.nxml,The authors would like to acknowledge the excellent technical assistance of Natacha Bazin and Tevrasamy Marday for the perfect care provided to rats throughout the studies.,rats
 IBRO_Rep/PMC6095098.nxml,The authors would like to thank Amanda Penko and A. Elizabeth Jansen for their roles in data collection.,data
+IBRO_Rep/PMC6084862.nxml,"The authors are grateful to Professors Michael A. Silverman for BDNF plasmid, Debora R. Fior-Chadi and Edilamar Menezes for helping with physical exercise protocol.",plasmid
 IBRO_Rep/PMC6111069.nxml,"Ms. Emmaline Bendell, Ms. Bingyu Zou and Dr. Ying Sun performed the animal breeding and histology; Dr. Carlos Blanco-Centurion performed the microscopy and cell counting.",animal;cell;microscopy
 IDCases/PMC4672608.nxml,"We would like to thank Kathie Grant and Corinne Amar in the Gastrointestinal Bacteria Reference Unit, and Karen Broughton and Mary Slack in the Respiratory and Systemic Infection Laboratory for their comments on these cases and help interpreting laboratory data.",data
 IDCases/PMC4735079.nxml,"The State Hygienic Laboratory of Iowa, 2490 Crosspark Rd, Coralville, IA 52241 performed initial culture and identification of the mold.",culture
@@ -66,6 +71,7 @@ IDCases/PMC4925901.nxml,"We thank Stéphane Lastère from the “Centre Hospital
 IDCases/PMC5007293.nxml,"We acknowledge Mr. Henk Brunings for performing all RT-PCR, and Dr. Mirdad Kazanji, Dr. Dominique Roussett, and Antoine Enfissi of Institute Louis Pasteur in Cayenne, French Guyana, for sequencing, phylogenetic analysis and fruitful discussion, and the Arboviral Diseases Branch of the Center for Disease Control and Prevention in Fort Collins, Colorado, USA, for providing Zika virus RNA.",rna;sequencing;virus
 IDCases/PMC5423323.nxml,"We wish to thank Tatsuya Nakamura Ph.D., from the Department of Clinical Laboratory in Kobe University Hospital, for performing polymerase chain reaction and DNA sequence analyses of our CA-MRSA strains.",dna
 IDCases/PMC5675711.nxml,"We also thank employees of the Clinical Laboratory of the Academic Hospital Paramaribo for their efforts, in particular Mr. Henk Brunings for performing ZIKV PCR.",pcr
+IDCases/PMC6010936.nxml,"Also, special thanks to Phang Nga hospital, Thai Muaeng Chaipat hospital, and Center of Vector Bone Disease Control 11.1 Phang Nga.",vector
 IEEE_J_Transl_Eng_Health_Med/PMC4848049.nxml,The authors would like to thank Megan Schmidt for assistance with data collection and Monica Mahre for help with manuscript preparation.,data
 IEEE_J_Transl_Eng_Health_Med/PMC4848075.nxml,"The authors would also like to thank Jennifer Hadway, Laura Morrison, and Lise Desjardins for their help in conducting the animal experiments.",animal
 IEEE_J_Transl_Eng_Health_Med/PMC4848075.nxml,"{}$t$
@@ -130,7 +136,6 @@ IMA_Fungus/PMC3348777.nxml,"Dae-Hoo Kim is greatly acknowledged for the preparat
 IMA_Fungus/PMC3348776.nxml,"We are grateful to Tineke van Doorn who helped with the morphological data, Uwe Braun with the Latin diagnosis, and our referees.",data
 IMA_Fungus/PMC3348773.nxml,Tineke van Doorn helped with the morphological data and Uwe Braun kindly provided the Latin diagnosis.,data
 IMA_Fungus/PMC3348779.nxml,"The authors thank the technical staff, Arien van Iperen (cultures), Marjan Vermaas (photo plates), and Mieke Starink-Willemse (DNA isolation, amplification and sequencing) for their invaluable assistance.",dna;sequencing
-IMA_Fungus/PMC3348779.nxml,"Finally, we thank Alain Gardiennet for the supply of specimens.",supply
 IMA_Fungus/PMC3348781.nxml,"We thank the technical staff, Arien van Iperen (cultures), Marjan Vermaas (photo plates), and Mieke Starink-Willemse (DNA isolation, amplification and sequencing) for their invaluable assistance.",dna;sequencing
 IMA_Fungus/PMC3359811.nxml,"Tübingen, Germany) for providing the molecular lab, Anna Łatkiewicz (Kraków, Poland) for help with the SEM pictures, and Roger G. Shivas (",sem
 IMA_Fungus/PMC3317358.nxml,"We thank the technical staff, Arien van Iperen (cultures), Marjan Vermaas (photographic plates), and Mieke Starink-Willemse (DNA isolation, amplification and sequencing) for their invaluable assistance.",dna;sequencing
@@ -157,7 +162,6 @@ IMA_Fungus/PMC3719202.nxml,We also thank Mr. Alan Hall of the microscopy unit of
 IMA_Fungus/PMC3719200.nxml,"I sequence data for several  Phytophthora aquimorbida, P. hydropathica, P. irrigate,  and  P. parsiana.",data
 IMA_Fungus/PMC3719204.nxml,"We thank Michael Weiß, Sigisfredo Garnica, and Robert Bauer (Tübingen, Germany) for providing facilities for molecular analyses, Günther Deml (Braunschweig, Germany) for sending rare literature, the Curators of herbaria: Markus Scholler (KR-M), and Kálmán Vánky (H.U.V.) for loan of specimens, Anna and Michał Ronikier (Kraków, Poland) for collecting material, and Anna Łatkiewicz (Kraków, Poland) for her help with the SEM pictures.",sem
 IMA_Fungus/PMC3719208.nxml,"The aid of Klaus Ide (BIS, Leverkusen, Germany) with performing SEM is gratefully acknowledged, as is the help of the curators at C, E, HMAS, K, and QCNE.",sem
-IMA_Fungus/PMC3719208.nxml,Brian J. Coppins (Edinburgh) is thanked for supplying material from Sarawak.,supplying
 IMA_Fungus/PMC4107892.nxml,"We thank the technical staff, Arien van Iperen (cultures), Marjan Vermaas (photographic plates), and Mieke Starink-Willemse (DNA isolation, amplification and sequencing) for their invaluable assistance.",dna;sequencing
 IMA_Fungus/PMC4107899.nxml,"We thank the technical staff, Arien van Iperen (cultures), Marjan Vermaas (photographic plates), and Mieke Starink-Willemse (DNA isolation, amplification and sequencing) for their invaluable assistance.",dna;sequencing
 IMA_Fungus/PMC3719209.nxml,"We are deeply grateful to SUT Research Center for Microbial Cultures for Food and Bioplastics Production, and Narumol Mothong for supporting and assisting with the DNA work.",dna
@@ -176,7 +180,7 @@ IMA_J_Appl_Math/PMC4816497.nxml,"The authors acknowledge useful discussions with
 ISME_J/PMC4303625.nxml,We thank Alastair Bewsher for his help with the IC data.,data
 ISME_J/PMC2764841.nxml,"We also wish to acknowledge Dr. Eva Top for advice on methods for DNA isolation, Richard Pendegraft for help with statistical analyses, and Dr. Matthias Zielke, Dr. Stefano Ventura and Silvia Turichia for their assistance in the field.",dna
 ISME_J/PMC3105771.nxml,We thank David Harris and members of the sequencing team at the Wellcome Trust Sanger Institute for generating the sequences.,sequencing
-ISME_J/PMC3105769.nxml,The authors would like to thank Professor Jan Kok from the Rijksuniversiteit Groningen for kindly supplying strain  L. lactis  MG610.,strain;supplying
+ISME_J/PMC3105769.nxml,The authors would like to thank Professor Jan Kok from the Rijksuniversiteit Groningen for kindly supplying strain  L. lactis  MG610.,strain
 ISME_J/PMC3160684.nxml,RAF and JPZ recognize the helpful suggestions and advice by J Montoya and C Mahaffey in the data processing and D Karl for his helpful suggestions on our manuscript preparation.,data
 ISME_J/PMC3160686.nxml,"We thank Geoff A Codd for the microcystin gravimetrical standards, Marion Meima for technical support with the quantitative PCR, and the reviewers for their helpful comments on the manuscript.",pcr
 ISME_J/PMC3309351.nxml,"We thank Mitchell Sogin, Linda Amaral-Zettler, Hilary Morrison and Katerina Andreishcheva at the MBL (Woods Hole) for their assistance with 454 massively parallel tag sequencing.",sequencing
@@ -199,6 +203,7 @@ ISME_J/PMC3554415.nxml,We thank Ali Hahn for high pressure liquid chromatography
 ISME_J/PMC3526179.nxml,We thank Todd Miller for collecting the lake water sample used to recover the SAG sequence.,sample
 ISME_J/PMC4303630.nxml,"Soon Lee, Peter Morrison-Whittle and Velimir Gayevskiy assisted with sample collection and processing.",sample
 ISME_J/PMC3578568.nxml,"We acknowledge GO Walker for assistance with sampling, CR Schvarcz for providing an RNA virus isolate for assay testing, and Shulei Sun and the Broad Institute for assistance with the processing and sequencing of the metagenomes.",assay;rna;sequencing;virus
+ISME_J/PMC4303628.nxml,We thank Eric Maria and Louise Oriol for assisting with the collection and analysis of samples for the physical and chemical parameters over the time-series.,chemical
 ISME_J/PMC3806269.nxml,We also want to thank Associate/Professor Noel Davies for performing the HPLC analysis.,hplc
 ISME_J/PMC3960541.nxml,"We thank Gail Ackermann and Doug Wendel for their help with metadata compliance and data submission, and Jeremy Ramsey and A Elizabeth Nichols for their assistance in collecting samples.",data
 ISME_J/PMC3960535.nxml,"We gratefully acknowledge provision of the  w MelPop-CLA-infected RML-12 cell line and pre-publication access to genomic data for  w MelPop-CLA by Megan Woolfit, Iñaki Iturbe-Ormaetxe and Scott O'Neill (Monash University).",cell;data
@@ -213,17 +218,20 @@ ISME_J/PMC4069396.nxml,We are thankful for the help of Yvette Piceno and Francin
 ISME_J/PMC4030223.nxml,"We gratefully acknowledge the provision of sediment samples by Jan Amend, Gail Lee Arnold, Carol Arnosti, Elisa Bayraktarov, Antje Boetius, Gerhard Bohrmann, Ellen Damm, Steve D'Hondt, Tim Ferdelman, Moritz Holtappels, Lars Holmkvist, Sabine Kasten, Martin Krüger, Connie Lovejoy, Maren Nickel, Aude Picard, Roy Price, Nils Risgaard-Petersen, Alberto Robador, Søren Rysgaard, Joanna Sawicka, Verona Vandieken, and Thorsten Wilhelm.",elisa
 ISME_J/PMC4030226.nxml,"We would like to thank Clarence C Lee and Timothy T Harkins from the Advance Applications Group, and Life Technologies for generously providing sequence data with Ion Torrent technology.",data
 ISME_J/PMC4030226.nxml,"Data access Sequence data was depositied in the NCBI database under accession numbers SRX151603, SRX151605, SRX151606, 151607-151615, SRX106094, SRX106095, SRX106105, SRX106106, SRX108115, SRX108128-SRX108130 for the 454 data, and Ion Torrent data can be found publically available in MG-RAST with ID# 4541773.3.",data
+ISME_J/PMC3930321.nxml,"We thank Nobuya Itoh, Christopher M Thomas, Eva M Top and Maria Teresa Coque for kindly providing the plasmids for this study.",plasmids
 ISME_J/PMC4478705.nxml,"JC Auguet, M Llirós, F Gich, FM Lauro and JM Gasol are acknowledged for field and lab assistance and ancillary data.",data
 ISME_J/PMC3996699.nxml,"The authors wish to thank Carmen Czepe, Heinz Ekker and Andreas Sommer from Campus Science Support Facilities GmbH (CSF), Vienna, for Illumina HiSeq sequencing.",sequencing
 ISME_J/PMC4184009.nxml,"Thanks to the members of the British Services Antarctic Expedition 2012 for collecting the Marguerite Bay marine sediment samples and to Dawn Goldsmith and Bhakti Dwivedi for assistance with bioinformatics and primer design, respectively.",primer
 ISME_J/PMC4260697.nxml,"We thank C Bachy, AJ Limardo, L Sudek and H Yu for laboratory work, the National Center for Genome Resources and the Gordon and Betty Moore Foundation (GBMF) for Illumina sequencing.",sequencing
 ISME_J/PMC4274436.nxml,"We thank Chloé Béal for technical help on RT-qPCR of probiotic strains, M Zhang for statistics expertise and G Wang and J Wang for 454 pyrosequencing data extraction and submission.",data
 ISME_J/PMC4274434.nxml,We thank Orin Shanks and Hyatt Green of the USEPA for providing US animal fecal samples.,animal
+ISME_J/PMC4303643.nxml,"We thank Colin Roberts and Pete Scarlett (CEH) for the river sampling, and Emma Gozzard, Linda Armstrong, Sarah Harman and Heather Wickham of the CEH Nutrient Laboratories for carrying out the chemical analysis.",chemical
 ISME_J/PMC4737935.nxml,"We thank A Culley and C Schvarcz for assistance in collecting virus samples; A Alpert and E Woznica for their collection and processing of bacterial production samples; K Coleman, M Garzio, T Miles and C Funkey for assistance with sample collection; the employees of Raytheon Polar Services Company for their support; A Gregory and B Poulos for assistance in conducting linker amplification; B Poulos and V Rich for assistance with bacterial DNA extraction; A Westveld for assistance with social network analysis; and members of the Tucson Marine Phage Lab, E Allers and V Rich for their support and critical review of this research.",dna;sample;virus
 ISME_J/PMC3930316.nxml,"We thank Ying Sun for the help on picture drawing and editing, and also thank Yanping Zheng for the help on sample collection.",sample
 ISME_J/PMC4409162.nxml,We thank Salome Schneider (Swedish University of Agricultural Sciences) for helping with soil sampling and DNA extraction as well as Stephanie Pfister (Agroscope INH) for technical assistance with PCR amplicon generation.,dna;pcr
 ISME_J/PMC4409164.nxml,Final thanks extend to Dr Margaret Hughes and Professor Andrew Cossins at the Centre for Genomic Research (Liverpool University) for additional 454 Roche sequencing support.,sequencing
 Obes_Facts/PMC5644670.nxml,"We thank Thor Helge Bergan for providing results of the early Norway studies, Elena Danilenko for deactivating ion generators, Ekaterina Tolstykh for randomization and instructing study participants on how to use the intervention devices, Evgeniy Verevkin for processing meteorological data, Anna Wirz-Justice for English editing and comments on the manuscript, Eryl Price of Lumie for English editing of the final version of the manuscript.",data
+Obes_Facts/PMC5644837.nxml,"We thank Bogdan Dragulescu from Politehnica University of Timișoara for rendering the vector map of Romania and designing a script (Phyton programming language) that uses the revised IOTF cut-offs to calculate prevalence of Thinness, Overweight and Obesity in Children.",vector
 Obes_Facts/PMC5644837.nxml,"We also acknowledge Silvia Mandasescu (Roman Municipal Hospital), Lecturer Cornel Vălean and Prof. Mircea Nanulescu (Clinical Emergency Hospital for Children Cluj) for their involvement in data collection.",data
 Obes_Facts/PMC4343283.nxml,"Special thanks to Ms. Emily Mire and Ms. Connie Murla for data management, and to Dr. Jennifer Rood and the staff of the Clinical Chemistry Laboratory as well as the many clinical scientists and staff of the PBRC who have contributed data to the development of the PCLS.",data
 Obes_Facts/PMC5644824.nxml,"We also thank Mrs. Gerlinde Trischler (Department of 2 Internal Medicine II - Cardiology, Medical Clinic Ulm) for the measurement of serum concentrations of cardiometabolic risk factors.",serum
@@ -268,7 +276,6 @@ Obes_Surg/PMC5403839.nxml,We would like to thank E. Tromp for helping with the d
 Obes_Surg/PMC6018591.nxml,"The following surgeon also contributed to data collection: Mr. Nicholas Penney, MBBS.",data
 Obesity_(Silver_Spring)/PMC3981958.nxml,We wish to thank Julie Foley at NIEHS Pathology Core for performing H&E staining on WAT.,staining
 Obesity_(Silver_Spring)/PMC3383904.nxml,"We thank Theresa Sikorski and staff at the Freimann Life Science Center, University of Notre Dame, for assistance with animal care.",animal
-Obesity_(Silver_Spring)/PMC3682646.nxml,We thank the Boston Nutrition Obesity Research Center (NIH DK046200) for supplying adipocyte samples through the Adipocyte Core.,supplying
 Obesity_(Silver_Spring)/PMC3428606.nxml,"Appreciation is expressed to Lora G. Roba, Vida Rostami, Lauren Angelucci, Nicole Gens, and Caitlin Hart for data collection and data entry and assisting in the implementation of protocol.",data
 Obesity_(Silver_Spring)/PMC3343346.nxml,We thank Trevino Larry for transfer of CT scan data.,data;scan
 Obesity_(Silver_Spring)/PMC3346885.nxml,"We would also thank Andrew Cooper, Ji Young Li, Frederick Rademaker and Irene B. Helenowski for their assistance in the statistical analysis of our data.",data
@@ -446,6 +453,9 @@ CBE_Life_Sci_Educ/PMC6007768.nxml,We thank William Pierce and Thea Clarke for th
 CBE_Life_Sci_Educ/PMC5998306.nxml,We thank Wayne Turner and Nguyen Cao for help with querying the databases for data and Drs.,data
 CBE_Life_Sci_Educ/PMC5998329.nxml,"Eshwar Udho, Christine Fabian, Tawnya Cary, Christopher Trimby, Jessica TeSlaa, and Jane Harris-Cramer assisted with coding alumni survey data.",data
 CBE_Life_Sci_Educ/PMC6007780.nxml,We acknowledge the contributions of Kelaine Haas and Alexander Motten to the implementation and collection of data.,data
+CNS_Drugs/PMC4246125.nxml,"Edward Tobinick has multiple issued and pending US and foreign patents, assigned to TACT IP, LLC, which claim methods of use of etanercept for the treatment of neurological disorders, including, but not limited to, US patents 6419944, 6537549, 6982089, 7214658, 7629311, 8119127, 8236306 and 8349323, all assigned to TACT IP, LLC; and Australian patent 758523.",ip
+CNS_Drugs/PMC4110406.nxml,"Edward Tobinick has multiple issued and pending US and foreign patents, assigned to TACT IP, LLC, that claim methods of use of etanercept for treatment of neurological disorders, including but not limited to US patents 6419944, 6537549, 6982089, 7214658, 7629311, 8119127, 8236306, and 8349323, all assigned to TACT IP, LLC; and Australian patent 758523.",ip
+CNS_Drugs/PMC4555339.nxml,"He has spoken on behalf of Novartis, UCB, Inc., and Teva Pharmaceuticals and has held stock in the following companies: Abbott Laboratories, Bristol-Myers Squibb, Celgene, Dow Chemical, Dupont, Durata Therapeutics, Eli Lilly, Gilead, GlaxoSmithKline, Humana, Impax Laboratories, Inc., Johnson and Johnson, Neogen, Roche Holding, Sigma-Aldrich, and Teva Neuroscience.",chemical
 CNS_Drugs/PMC4676085.nxml,"The authors would like to thank Maria Roberts, the trial head employed by Novartis Pharmaceutical Corporation, who contributed to the study design and data collection and was accountable for the delivery of the trial.",data;delivery
 CNS_Drugs/PMC4676085.nxml,"Michael Huss provided medical advice, contributed to study design, data collection and interpretation, providing guidance to the development of manuscript.",data
 CNS_Drugs/PMC4676085.nxml,"Ylva Ginsberg, Torben Arngrim, Alexandra Philipsen were responsible for data collection, data interpretation, and reviewing and editing the manuscript for intellectual content.",data
@@ -455,5 +465,6 @@ CNS_Drugs/PMC4676085.nxml,"Preetam Gandhi was the medical specialist for the tri
 CNS_Drugs/PMC5078162.nxml,Karine Leclercq is greatly acknowledged for sharing the seizure model data generated with SV2B knockout mice.,data;mice
 CNS_Drugs/PMC5078162.nxml,We are grateful to Dr. Sjoerd Finnema for sharing PET imaging data obtained with [ 11 C]UCB-J radiotracer and preparation of Fig. ,data;imaging;pet
 CNS_Drugs/PMC5730627.nxml,"Jeffrey Newcorn, the lead author and primary investigator, had full access to all study data and takes responsibility for the integrity of the data and the accuracy of the data analysis.",data
+CNS_Neurol_Disord_Drug_Targets/PMC3744922.nxml,"We would also like to thank R. Cappai, A. Miyawaki and D.W. Piston for generous gifts of plasmids.",plasmids
 CNS_Neurosci_Ther/PMC4359682.nxml,"We thank Michaëlla Grossman, Nathalie Pacico, and Nadine Noël for the preparation of primary cortical cultures and neuroblastoma cells.",cells
-CNS_Neurosci_Ther/PMC5248597.nxml,"We thank Dr. Jie Shen for providing the LRRK2 KO mice, and Dr. Nathanael S Gray for supplying GNE‐7915.",mice;supplying
+CNS_Neurosci_Ther/PMC5248597.nxml,"We thank Dr. Jie Shen for providing the LRRK2 KO mice, and Dr. Nathanael S Gray for supplying GNE‐7915.",mice
