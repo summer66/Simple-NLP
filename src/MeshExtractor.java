@@ -5,171 +5,174 @@ import com.univocity.parsers.csv.CsvWriter;
 import com.univocity.parsers.csv.CsvWriterSettings;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.InputStreamReader;
 import java.util.*;
 
 public class MeshExtractor {
 
-    private static Set<String> stopwords = new HashSet<>(Arrays.asList("is", "are", "the", "was", "were", "on", "for", "by", "it"));
+	private static Set<String> stopwords = new HashSet<>(
+			Arrays.asList("is", "are", "the", "was", "were", "on", "for", "by", "it", "we",
+					"he", "she", "as", "and", "thank", "like", "of", "", "to", "dr", "author", "kind", "university", "also", "at", "in", "wish", "thankful", "authors", "his", "her", "she", "he"));
 
-   private static Map<String, Set<String>> tokenToMeshKeywords = new HashMap<>();
+	private static Map<String, Set<String>> tokenToMeshKeywords = new HashMap<>();
 
-    public static void main(String[] args) throws Exception {
+	public static void main(String[] args) throws Exception {
 
-        CsvParserSettings settings = new CsvParserSettings();
-        BeanListProcessor<MeshVocab> rowProcessor = new BeanListProcessor<>(MeshVocab.class);
+//		CsvParserSettings settings = new CsvParserSettings();
+//		BeanListProcessor<MeshVocab> rowProcessor = new BeanListProcessor<>(MeshVocab.class);
+//
+//		settings.setProcessor(rowProcessor);
+//
+//		settings.setHeaderExtractionEnabled(true);
+//
+//		CsvParser parser = new CsvParser(settings);
+//
+//		parser.parse(new FileReader("/home/hao/Documents/Simple-NLP/resources/selected_mesh.csv"));
+//
+//		List<MeshVocab> beansOfInterest = rowProcessor.getBeans();
 
-        settings.setProcessor(rowProcessor);
+		Set<String> keywords = new HashSet<>();
 
-        settings.setHeaderExtractionEnabled(true);
+		try(BufferedReader reader = new BufferedReader(new FileReader("/home/hao/Documents/Simple-NLP/resources/candidate_keywords"))) {
+			String line = null;
+			while( (line = reader.readLine()) != null) {
+				keywords.add(line);
+			}
+		}
 
-        CsvParser parser = new CsvParser(settings);
+		keywords.remove("");
 
-        parser.parse(new InputStreamReader(MeshVocab.class.getResourceAsStream("/MeSH.csv")));
+		CsvParserSettings settings2 = new CsvParserSettings();
+		BeanListProcessor<GenderedSentence> rowProcessor2 = new BeanListProcessor<>(GenderedSentence.class);
 
-        List<MeshVocab> beans = rowProcessor.getBeans();
+		settings2.setProcessor(rowProcessor2);
 
-        Set<MeshVocab> beansOfInterest = new HashSet<>();
+		settings2.setHeaderExtractionEnabled(true);
 
-        Set<String> semanticTypes = new HashSet<>();
+		CsvParser parser2 = new CsvParser(settings2);
 
-        try (BufferedReader reader = new BufferedReader(new InputStreamReader(MeshParser.class.getResourceAsStream("selected_semantic_types")))) {
-            String line = null;
-            while ((line = reader.readLine()) != null) {
-                semanticTypes.add(line.toLowerCase());
-            }
-        }
+		parser2.parse(new FileReader("/home/hao/Documents/Simple-NLP/resources/gendered_sentences.csv"));
 
-        for (MeshVocab bean : beans) {
-            List<String> types = Arrays.asList(bean.getSemanticTypes().split(";"));
+		List<GenderedSentence> beans2 = rowProcessor2.getBeans();
 
-            for (String type : types) {
-                if (semanticTypes.contains(type.toLowerCase())) {
-                    beansOfInterest.add(bean);
-                    break;
-                }
+		CsvWriter csvWriter = new CsvWriter(new FileWriter("/home/hao/Documents/Simple-NLP/resources/mesh_extracted.csv"), new CsvWriterSettings());
 
-            }
+		csvWriter.writeHeaders("filenamne", "Text", "keywords");
 
-        }
+		int count = 0;
 
-        beansOfInterest.forEach(bean -> {
-                    String preferred = bean.getPreferred().toLowerCase();
+		for (GenderedSentence genderBean : beans2) {
+			String text = genderBean.getSentence();
 
-                    List<String> synonyms = Arrays.asList(bean.getSynonyms().toLowerCase().split(";"));
-                    List<String> parents = Arrays.asList(bean.getParents().toLowerCase().split(";"));
-                    Set<String> allTerms = bean.getAllTerms();
+//			Set<String> meshKeyWords = getMeshKeyWords(text, beansOfInterest);
 
-                    allTerms.add(preferred);
-                    allTerms.addAll(synonyms);
-                    allTerms.addAll(parents);
-                    bean.setAllTerms(allTerms);
-                }
+			Set<String> extractedKeywords = getKeywords(text, keywords);
 
-        );
+			if (!extractedKeywords.isEmpty()) {
+				count++;
+				System.out.println(genderBean.getSentence() + ": " + extractedKeywords);
+				csvWriter.writeRow(genderBean.getFilnName(), genderBean.getSentence(), String.join(";", extractedKeywords));
+			}
+		}
 
+		csvWriter.close();
 
-        System.out.println(beansOfInterest.size());
-        System.out.println(beans.size());
+		System.out.println("Number of sentences: " + beans2.size());
 
-
-        CsvParserSettings settings2 = new CsvParserSettings();
-        BeanListProcessor<GenderedSentence> rowProcessor2 = new BeanListProcessor<>(GenderedSentence.class);
-
-        settings2.setProcessor(rowProcessor2);
-
-        settings2.setHeaderExtractionEnabled(true);
-
-        CsvParser parser2 = new CsvParser(settings2);
-
-        parser2.parse(new InputStreamReader(MeshVocab.class.getResourceAsStream("/gendered_sentences.csv")));
-
-        List<GenderedSentence> beans2 = rowProcessor2.getBeans();
-
-        CsvWriter csvWriter = new CsvWriter(new FileWriter("/home/ubuntu/IdeaProjects/nlp/src/mesh_extracted.csv"), new CsvWriterSettings());
-
-        csvWriter.writeHeaders("filenamne", "Text", "mesh");
-
-        for (GenderedSentence genderBean : beans2) {
-            String text = genderBean.getSentence();
-
-            Set<String> meshKeyWords = getMeshKeyWords(text, beansOfInterest);
-
-            if (!meshKeyWords.isEmpty())
-
-                System.out.println(genderBean + ": " + meshKeyWords);
-        }
+		System.out.println(count);
 
 
-    }
 
-    private static Set<String> getMeshKeyWords(String text, Set<MeshVocab> beans) {
-        System.out.println("Processing: " + text);
-        Set<String> keywords = new TreeSet<>();
+	}
 
-        Set<String> tokens = new HashSet<>(Arrays.asList(text.replace(".", "").split(" ")));
-        tokens.remove("");
-        removeStopWords(tokens);
+	private static Set<String> getMeshKeyWords(String text, List<MeshVocab> beans) {
+//		System.out.println("Processing: " + text);
+		Set<String> keywords = new TreeSet<>();
 
-        System.out.println(tokens);
+		Set<String> tokens = new HashSet<>(Arrays.asList(text.toLowerCase().split(" ")));
 
-        List<MeshVocab> matchedBeans = new ArrayList<>();
-        for (String token : tokens) {
-            if(tokenToMeshKeywords.get(token) == null) {
-                int max = 0;
-                MeshVocab matchedBean = null;
+		removeStopWords(tokens);
 
-                for (MeshVocab bean : beans) {
+//		System.out.println(tokens);
 
-                    Set<String> terms = bean.getAllTerms();
-                    for (String term : terms) {
+		List<MeshVocab> matchedBeans = new ArrayList<>();
+		for (String token : tokens) {
+			if (tokenToMeshKeywords.get(token) == null) {
+				double max = 0;
+				MeshVocab matchedBean = null;
 
-                        int lcs = longestCommonSubsequend(term, token);
-                        if (lcs > max) {
-                            max = lcs;
-                            matchedBean = bean;
-                        }
-                    }
-                }
+				for (MeshVocab bean : beans) {
 
-                if (matchedBean != null) {
-                    matchedBeans.add(matchedBean);
-                    tokenToMeshKeywords.computeIfAbsent(token, k -> new HashSet<>()).add(matchedBean.getPreferred());
-                }
-            }
-        }
+					System.out.println("bean all terms: " + bean.getAllTermsStr());
 
-        if (!matchedBeans.isEmpty()) {
-            matchedBeans.forEach(bean -> keywords.add(bean.getPreferred()));
-        }
+					Set<String> terms = new HashSet<>(Arrays.asList(bean.getAllTermsStr().split(";")));
+					for (String term : terms) {
 
-        return keywords;
+						int lcs = longestCommonSubsequence(term, token);
+						double ratio = (double) lcs/token.length();
+						if (ratio > max && ratio > 0.2) {
+							max = ratio;
+							matchedBean = bean;
+						}
+					}
+				}
 
-    }
+				if (matchedBean != null) {
+					matchedBeans.add(matchedBean);
+					tokenToMeshKeywords.computeIfAbsent(token, k -> new HashSet<>()).add(matchedBean.getPreferred());
+					System.out.println("MATCHED: " + token + " | " + matchedBean.getPreferred());
+				}
+			}
+		}
 
-    public static int longestCommonSubsequend(String seq1, String seq2) {
-        int m = seq1.length();
-        int n = seq2.length();
-        int[][] matrix = new int[m + 1][n + 1];
-        for (int i = 0; i <= m; i++) {
-            for (int j = 0; j <= n; j++) {
-                if (i == 0 || j == 0) {
-                    matrix[i][j] = 0;
-                }
-                else if (seq1.charAt(i - 1) == seq2.charAt(j - 1)) {
-                    matrix[i][j] = matrix[i - 1][j - 1] + 1;
-                }
-                else {
-                    matrix[i][j] = Integer.max(matrix[i - 1][j], matrix[i][j - 1]);
-                }
-            }
-        }
-        return matrix[m][n];
-    }
+		if (!matchedBeans.isEmpty()) {
+			matchedBeans.forEach(bean -> keywords.add(bean.getPreferred()));
+		}
 
-    private static void removeStopWords(Set<String> tokens) {
-        tokens.removeAll(stopwords);
-    }
+		return keywords;
+
+	}
+
+	private static Set<String> getKeywords(String text, Set<String> keywords) {
+
+		Set<String> words = new TreeSet<>();
+
+		Set<String> tokens = new HashSet<>(Arrays.asList(text.toLowerCase().split("\\s+")));
+
+		for(String token : tokens) {
+			token = token.replaceAll("[.,()]", "");
+			if(keywords.contains(token)) {
+				words.add(token);
+			}
+		}
+
+		return words;
+
+	}
+
+	public static int longestCommonSubsequence(String seq1, String seq2) {
+		int m = seq1.length();
+		int n = seq2.length();
+		int[][] matrix = new int[m + 1][n + 1];
+		for (int i = 0; i <= m; i++) {
+			for (int j = 0; j <= n; j++) {
+				if (i == 0 || j == 0) {
+					matrix[i][j] = 0;
+				}
+				else if (seq1.charAt(i - 1) == seq2.charAt(j - 1)) {
+					matrix[i][j] = matrix[i - 1][j - 1] + 1;
+				}
+				else {
+					matrix[i][j] = Integer.max(matrix[i - 1][j], matrix[i][j - 1]);
+				}
+			}
+		}
+		return matrix[m][n];
+	}
+
+	private static void removeStopWords(Set<String> tokens) {
+		tokens.removeAll(stopwords);
+	}
 }

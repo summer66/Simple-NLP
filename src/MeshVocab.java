@@ -17,6 +17,9 @@ public class MeshVocab {
     @Parsed(index = 3)
     private String semanticTypes;
 
+    @Parsed(index = 4)
+    private String allTermsStr;
+
     private Set<String> allTerms;
 
     @Override
@@ -76,5 +79,13 @@ public class MeshVocab {
 
     public void setAllTerms(Set<String> allTerms) {
         this.allTerms = allTerms;
+    }
+
+    public String getAllTermsStr() {
+        return allTermsStr;
+    }
+
+    public void setAllTermsStr(String allTermsStr) {
+        this.allTermsStr = allTermsStr;
     }
 }

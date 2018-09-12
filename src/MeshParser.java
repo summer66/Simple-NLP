@@ -32,7 +32,7 @@ public class MeshParser {
 
         Set<String> semanticTypes = new HashSet<>();
 
-        try(BufferedWriter writer = new BufferedWriter(new FileWriter("/home/ubuntu/IdeaProjects/nlp/src/semantic_types"))) {
+        try(BufferedWriter writer = new BufferedWriter(new FileWriter("/home/ubuntu/IdeaProjects/nlp/resources/semantic_types"))) {
 
             for(MeshVocab bean : beans) {
                 String typeStr = bean.getSemanticTypes();
