@@ -57,7 +57,7 @@ public class MeshExtractor {
 
 		List<GenderedSentence> beans2 = rowProcessor2.getBeans();
 
-		CsvWriter csvWriter = new CsvWriter(new FileWriter("/home/hao/Documents/Simple-NLP/resources/mesh_extracted.csv"), new CsvWriterSettings());
+		CsvWriter csvWriter = new CsvWriter(new FileWriter("/home/hao/Documents/Simple-NLP/resources/keywords_extracted.csv"), new CsvWriterSettings());
 
 		csvWriter.writeHeaders("filenamne", "Text", "keywords");
 
