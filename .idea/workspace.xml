@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52eb1e09-85d8-4e6f-8f0d-4d881870f900" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/female_weight_in_keyword_categories.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/tally_keywords_full.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GenderBreakdown.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/KeywordCategories.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/MeSH.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/candidate_keywords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/candidate_keywords.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/gendered_sentences.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/keywords_extracted.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/selected_mesh.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/selected_semantic_types" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/semantic_types" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/tally_keywords.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GenderedSentence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenderedSentence.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MeshExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeshExtractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MeshParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MeshVocab.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SelectedMesh.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,12 +18,12 @@
         <entry file="file://$PROJECT_DIR$/src/GenderBreakdown.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="female_weight_in_keyword_categories.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="female_weight_in_keyword_categories.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/female_weight_in_keyword_categories.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
@@ -50,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MeshExtractor.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MeshExtractor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MeshExtractor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
-              <caret line="110" column="10" selection-start-line="110" selection-start-column="10" selection-end-line="110" selection-end-column="10" />
+              <caret line="109" column="8" selection-start-line="109" selection-start-column="8" selection-end-line="109" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -116,8 +98,8 @@
         <option value="$PROJECT_DIR$/src/GenderedSentence.java" />
         <option value="$PROJECT_DIR$/resources/candidate_keywords" />
         <option value="$PROJECT_DIR$/src/GenderBreakdown.java" />
-        <option value="$PROJECT_DIR$/src/MeshExtractor.java" />
         <option value="$PROJECT_DIR$/resources/female_weight_in_keyword_categories.txt" />
+        <option value="$PROJECT_DIR$/src/MeshExtractor.java" />
       </list>
     </option>
   </component>
@@ -307,7 +289,7 @@
       <option name="presentableId" value="Default" />
       <updated>1536705504239</updated>
       <workItem from="1536705509843" duration="880000" />
-      <workItem from="1536706443303" duration="14768000" />
+      <workItem from="1536706443303" duration="15491000" />
     </task>
     <task id="LOCAL-00001" summary="use keyword list instead of mesh">
       <created>1536711375344</created>
@@ -379,11 +361,18 @@
       <option name="project" value="LOCAL" />
       <updated>1536719948494</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="code and result update">
+      <created>1536799874210</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1536799874210</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15648000" />
+    <option name="totallyTimeSpent" value="16371000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="950" extended-state="6" />
@@ -439,7 +428,8 @@
     <MESSAGE value="rearrange output fields" />
     <MESSAGE value="categorize keywords" />
     <MESSAGE value="add file format" />
-    <option name="LAST_COMMIT_MESSAGE" value="add file format" />
+    <MESSAGE value="code and result update" />
+    <option name="LAST_COMMIT_MESSAGE" value="code and result update" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -621,13 +611,6 @@
     <entry file="file://$PROJECT_DIR$/resources/tally_keywords_full.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MeshExtractor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="110" column="10" selection-start-line="110" selection-start-column="10" selection-end-line="110" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/keywords_extracted_full.csv">
       <provider selected="true" editor-type-id="LargeFileEditor">
         <state relative-caret-position="-486" />
@@ -636,7 +619,7 @@
     <entry file="file://$PROJECT_DIR$/src/GenderBreakdown.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
@@ -644,6 +627,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MeshExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="109" column="8" selection-start-line="109" selection-start-column="8" selection-end-line="109" selection-end-column="8" />
         </state>
       </provider>
     </entry>

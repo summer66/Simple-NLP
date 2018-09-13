@@ -107,7 +107,7 @@ public class MeshExtractor {
 		csvWriter.close();
 
 		System.out.println("Number of sentences: " + beans2.size());
-		//
+
 		System.out.println("Total number of sentences that have keywords: " + count);
 
 		try (BufferedWriter writer = new BufferedWriter(new FileWriter("/home/hao/Documents/Simple-NLP/resources/tally_keywords_full.txt"))) {
