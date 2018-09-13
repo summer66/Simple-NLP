@@ -5,23 +5,29 @@ public class GenderedSentence {
     @Parsed (field = "filename")
     private String filnName;
 
-    @Parsed (field = "Is Female")
+	@Parsed(field = "Is Female (Weighted)")
     private String female;
 
     @Parsed (field = "Names")
     private String names;
 
-    @Parsed (field = "Nouns")
-    private String nouns;
-
-    @Parsed (field = "Organizations")
-    private String orgs;
-
-    @Parsed (field = "Verbs")
-    private String verbs;
+	//    @Parsed (field = "Nouns")
+	//    private String nouns;
+	//
+	//    @Parsed (field = "Organizations")
+	//    private String orgs;
+	//
+	//    @Parsed (field = "Verbs")
+	//    private String verbs;
 
     @Parsed (field = "Text")
     private String sentence;
+
+	@Parsed(field = "Category")
+	private String category;
+
+	@Parsed(field = "Keywords")
+	private String keywords;
 
     @Override
     public String toString() {
@@ -63,27 +69,35 @@ public class GenderedSentence {
         this.names = names;
     }
 
-    public String getNouns() {
-        return nouns;
+	public String getCategory() {
+		return category;
     }
 
-    public void setNouns(String nouns) {
-        this.nouns = nouns;
+	public void setCategory(String category) {
+		this.category = category;
     }
 
-    public String getOrgs() {
-        return orgs;
-    }
-
-    public void setOrgs(String orgs) {
-        this.orgs = orgs;
-    }
-
-    public String getVerbs() {
-        return verbs;
-    }
-
-    public void setVerbs(String verbs) {
-        this.verbs = verbs;
-    }
+	//    public String getNouns() {
+	//        return nouns;
+	//    }
+	//
+	//    public void setNouns(String nouns) {
+	//        this.nouns = nouns;
+	//    }
+	//
+	//    public String getOrgs() {
+	//        return orgs;
+	//    }
+	//
+	//    public void setOrgs(String orgs) {
+	//        this.orgs = orgs;
+	//    }
+	//
+	//    public String getVerbs() {
+	//        return verbs;
+	//    }
+	//
+	//    public void setVerbs(String verbs) {
+	//        this.verbs = verbs;
+	//    }
 }
